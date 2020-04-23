@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hillel home work</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 48px;
+            margin: 0;
+        }
+
+        input, button {
+            font-size: 24px;
+        }
+
+        .note-list {
+            margin-top: 48px;
+            font-size: 20px;
+            list-style: none;
+        }
+
+        .note-list__item.note-list__item--completed {
+            color: grey;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div class="ToDoList">
+        <form class="formList">
+            <input class="text-input" type="text" placeholder="Enter your note">
+            <button class="button" type="submit">Add note</button>
+        </form>
+        <ul class="note-list">
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
